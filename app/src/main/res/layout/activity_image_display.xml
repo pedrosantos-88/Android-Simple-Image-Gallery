@@ -14,6 +14,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/head"
             android:layout_width="match_parent"
+
             android:layout_height="50dp"
             app:cardBackgroundColor="@color/skyblue">
 
@@ -35,6 +36,7 @@
             android:layout_below="@id/head"
             android:id="@+id/recycler"
             android:layout_width="match_parent"
+
             android:layout_height="match_parent"
             android:background="@color/white"
             android:columnWidth="@dimen/picture_column_width">

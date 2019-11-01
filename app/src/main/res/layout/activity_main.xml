@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
 
 
     <RelativeLayout
@@ -18,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             app:cardBackgroundColor="@color/skyblue">
+
 
 
             <TextView
@@ -46,14 +50,35 @@
 
         </androidx.cardview.widget.CardView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="23dp"
+            android:background="@color/black"
+            android:layout_marginBottom="15dp"
+            android:text="Photos"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
         <com.androidcodeman.simpleimagegallery.utils.AutoFitRecyclerView
             android:id="@+id/folderRecycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white"
-            android:columnWidth="@dimen/folder_column_width"
+            android:layout_height="350dp"
+            android:layout_below="@id/head"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="59dp"
+            android:background="@color/colorPrimaryDark"
             android:clipToPadding="false"
-            android:layout_below="@id/head">
+            android:columnWidth="@dimen/folder_column_width">
+
 
             <!--app:fastScrollEnabled="true"
        app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
@@ -62,6 +87,8 @@
        app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"-->
 
         </com.androidcodeman.simpleimagegallery.utils.AutoFitRecyclerView>
+
+
 
     </RelativeLayout>
 

@@ -2,6 +2,7 @@ package com.androidcodeman.simpleimagegallery.fragments;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.NonNull;
@@ -106,6 +107,8 @@ public class pictureBrowserFragment extends Fragment implements imageIndicatorLi
         previousSelected = position;
         indicatorAdapter.notifyDataSetChanged();
         indicatorRecycler.scrollToPosition(position);
+
+
 
 
         /**

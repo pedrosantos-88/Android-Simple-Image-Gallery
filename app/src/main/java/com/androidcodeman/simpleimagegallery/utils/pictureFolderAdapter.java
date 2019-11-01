@@ -4,6 +4,8 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +44,7 @@ public class pictureFolderAdapter extends RecyclerView.Adapter<pictureFolderAdap
     public FolderHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View cell = inflater.inflate(R.layout.picture_folder_item, parent, false);
+
         return new FolderHolder(cell);
 
     }
@@ -83,6 +86,7 @@ public class pictureFolderAdapter extends RecyclerView.Adapter<pictureFolderAdap
            folderPic = itemView.findViewById(R.id.folderPic);
            folderName = itemView.findViewById(R.id.folderName);
            folderCard = itemView.findViewById(R.id.folderCard);
+
         }
     }
 
